@@ -1,0 +1,155 @@
+*{margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;}
+
+:root{
+    --vermelho: #e50914;
+    --cinza: #303030;
+}
+
+body{background-color: dimgray;}
+
+header{background-image: url(imagens01/header-netflix.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 110vh;}
+
+#shadow-bg{background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.750), rgba(0, 0, 0, .5) 58%, rgba(0, 0, 0, 0.750));
+    width: 100%;
+    height: 110vh;
+    position: absolute;}
+
+
+
+.header-position-absolute{position: relative;}
+
+
+
+/*header flex*/
+.header-flex{display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 92%;
+    margin: auto;
+    padding-top: 26px;}   
+
+.header-flex img{width: 130px;
+    position: absolute;
+    top: -20px;}
+
+
+nav #language{display: inline-block;
+    padding: 5px 10px;
+    margin-right: 14px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 1.1em;}
+
+nav #SignUp{background-color: var(--vermelho);
+    color: #fff;
+    padding: 6px 14px;
+    margin-left: 14px;
+    border-radius: 3.5px;
+    font-size: 1.1em;}
+
+
+
+
+/*header text*/
+.header-text{transform: translateY(48%);
+    width: 55%;
+    margin: auto;
+    color: #fff;
+    text-align: center;}
+
+.header-text h1{font-size: 3.2em;
+    margin-bottom: 15px;}
+
+.header-text h2{font-size: 1.9em;
+    font-weight: normal;
+    margin-bottom: 25px;}
+
+.header-text h3{font-size: 1.3em;
+    font-weight: normal;
+    margin-bottom: 20px;}
+
+
+.header-text label{display: flex;
+    align-items: center;
+    justify-content: center;}
+
+.header-text input{padding: 20px 10px;
+    padding-right: 20px;
+    margin-bottom: 13px;
+    width: 65%;
+    font-size: 1em;}
+
+.header-text a{background-color: var(--vermelho);
+    color: white;
+    font-size: 1.7em;
+    padding: 14px 26px;
+    margin-bottom: 13px;}    
+
+
+
+/*media header*/
+@media(max-width: 1075px){
+    header{height: 130vh;}
+
+    #shadow-bg{height: 130vh;}
+
+    .header-text{transform: translateY(28%)}
+
+    .header-text label{flex-direction: column;}
+
+    .header-text input{width: 88%;}
+
+    .header-text a{padding: 5px 10px;
+        font-size: 1.4em;}
+}
+
+@media(max-width: 850px){
+    header{height: 110vh;}
+
+    #shadow-bg{height: 110vh;}
+
+    .header-text{width: 80%;
+        transform: translateY(20%);}
+}
+
+@media(max-width: 660px){
+    .header-flex img{width: 110px;
+        top: -10px;}
+
+    nav #language{padding: 5px 10px;
+        margin-right: 5px;
+        border: 1px solid #fff;
+        border-radius: 3px;
+        color: #fff;
+        font-size: 1.1em;}
+    
+    nav #SignUp{background-color: var(--vermelho);
+        color: #fff;
+        padding: 6px 14px;
+        margin-left: 5px;
+        border-radius: 3.5px;
+        font-size: 1.1em;}
+    
+    
+
+    .header-text{width: 95%;
+        transform: translateY(38%);}
+
+    .header-text h1{font-size: 2em;}
+    .header-text h2{font-size: 1.4em;}
+
+    .header-text h3{font-size: 1.1em;}
+        
+    .header-text input{padding: 15px 5px;
+        padding-right: 15px;
+        font-size: .9em;}
+}
+
